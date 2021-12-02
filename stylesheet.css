@@ -232,7 +232,25 @@ header {
     bottom: 0;
 }
 
+/* EASTER EGG */ 
 
+#easter-egg {
+    display: none;
+}
+
+.easter-egg label:hover {
+    cursor: pointer;
+}
+
+.easter-egg p {
+    display: none;
+    padding-left: 60%;
+    padding-bottom: 40px;
+}
+
+#easter-egg:checked + p {
+    display: block;
+}
 
 
 
@@ -280,11 +298,11 @@ header {
     .speech-bubble-2 {
         display: flex;
         justify-content: flex-end;
-        margin-right: 50px;
+        margin-right: 20%;
     }
 
     .dr-egghead-vertical {
-        margin-left: 55%;
+        margin-left: 45%;
     }
 
 
