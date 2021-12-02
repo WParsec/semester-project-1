@@ -34,6 +34,7 @@ h1 {
 
 body {
     min-height: 100vh;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -97,7 +98,8 @@ header {
     background-color: #145E95;
     background-image: url(/images/bg-home.jpg);
     height: 715px;
-    overflow: visible;
+    position: relative;
+    overflow-y: visible;
 }
 
 .header-text {
@@ -151,18 +153,21 @@ header {
 .hero-below {
     position: relative;
     width: 100%;
-    height: fit-content;
-    z-index: 1000;
 }
 
 
-.moon {
+.moon img {
+    width: 100%;
     position: absolute;
-    width: 330px;
-    top: -200px;
-    right: -10%;
-    max-width: 800px;
-    z-index: 1000;
+    z-index: 999;
+    margin: -50% 0% 0% 100%;
+    max-width: 760px;
+}
+
+.moon {
+    width: 60%;
+    z-index: 999;
+    position: relative;
 }
 
 
@@ -174,27 +179,58 @@ header {
 
 .hero-below {
     background-image: url(/images/home-bg-2.jpg);
-    height: 1179px;
+    height: fit-content;
+    position: relative;
 }
 
 .hero-below-text {
-    padding-top: 200px;
+    padding-top: 160px;
     width: 80%;
     max-width: 800px;
-    margin: auto;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 
 }
 
 .hero-below-text p {
-    padding-bottom: 40px;
     font-size: 20px;
 }
 
 
+.speech-bubble-2 {
+    margin-top: 40px;
+    position: relative;
+    padding-bottom: 200px;
+    margin-left: 10%;
+}
 
+.speech-bubble-2 img {
+    width: 90%;
+    margin: auto;
+    min-width: 250px;
+    max-width: 313px;
+    position: absolute;
+}
 
+.speech-text-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    max-width: 313px;
+}
 
+.speech-text-2 p {
+    font-size: 18px;
+}
 
+.dr-egghead-vertical {
+    margin-left: 15%;
+    position: absolute;
+    bottom: 0;
+}
 
 
 
@@ -229,13 +265,41 @@ header {
     .dr-egghead-1 {
         transform: rotate(-90deg) scale(1.2);
         margin-top: 0px;
-        margin-left: 10%;
+        margin-left: 15%;
         
     }
     .speech-text p {
         font-size: 20px;
         padding-top: 18px;
-        
     }
+
+    .moon {
+        bottom: 100px;
+    }
+
+    .speech-bubble-2 {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+    }
+
+    .dr-egghead-vertical {
+        margin-left: 55%;
+    }
+
+
+ 
+
   }
 
+  @media (min-width: 900px) {
+      .moon {
+          bottom: 200px;
+      }
+  }
+
+  @media (min-width: 1400px) {
+    .moon {
+        bottom: 50px;
+    }
+}
