@@ -32,6 +32,12 @@ h1 {
     font-family: 'nulshock';
 }
 
+h2 {
+    font-family: 'nulshock';
+    font-size: 24px;
+    color: #145E95;
+}
+
 body {
     min-height: 100vh;
     width: 100%;
@@ -78,6 +84,10 @@ header {
       border-bottom: 1px solid white;
   }
 
+  .current {
+    border-bottom: 1px solid white;
+  }
+
   nav li {
     display: block;
     padding: 30px 30px;
@@ -91,6 +101,7 @@ header {
     display: block;
   }
 
+/* HOMEPAGE */
 
 /* HOMEPAGE HERO */
 
@@ -179,12 +190,12 @@ header {
 
 .hero-below {
     background-image: url(/images/home-bg-2.jpg);
-    height: fit-content;
+    height: 1000px;
     position: relative;
 }
 
 .hero-below-text {
-    padding-top: 160px;
+    padding-top: 20%;
     width: 80%;
     max-width: 800px;
     margin-left: 10%;
@@ -198,12 +209,23 @@ header {
     font-size: 20px;
 }
 
+.orion {
+    width: 100%;
+    display: none;
+}
+
+.orion img {
+    width: 30%;
+    position: absolute;
+    right: 0;
+    padding: 5% 10% 5% 0;
+}
 
 .speech-bubble-2 {
-    margin-top: 40px;
-    position: relative;
+    position: absolute;
     padding-bottom: 200px;
     margin-left: 10%;
+    margin-top: 10%;
 }
 
 .speech-bubble-2 img {
@@ -217,7 +239,7 @@ header {
 .speech-text-2 {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
     padding: 10px;
     max-width: 313px;
 }
@@ -226,16 +248,22 @@ header {
     font-size: 18px;
 }
 
-.dr-egghead-vertical {
-    margin-left: 15%;
-    position: absolute;
-    bottom: 0;
-}
+
 
 /* EASTER EGG */ 
 
 #easter-egg {
     display: none;
+}
+
+.easter-egg {
+    position: absolute;
+    bottom: 0;
+    margin-left: 10%;
+}
+
+.easter-egg img {
+    margin-bottom: -5px;
 }
 
 .easter-egg label:hover {
@@ -244,14 +272,85 @@ header {
 
 .easter-egg p {
     display: none;
-    padding-left: 60%;
-    padding-bottom: 40px;
+    width: 100px;
 }
 
 #easter-egg:checked + p {
-    display: block;
+    display: inline-block
 }
 
+
+
+
+/* HEADING EXHIBITIONS */
+
+.heading-exhibitions {
+    background-color: #DFF0FD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+
+.heading-exhibitions img {
+    display: none;
+    max-width: 150px;
+}
+
+/* EXHIBITION SECTION */
+
+.exhibitions {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    padding: 40px 0 40px 0;
+    height: fit-content;
+}
+
+.card {
+    width: 30%;
+    min-width: 121.5px;
+    margin: 19px;
+    text-align: center;
+}
+
+.card p {
+    color: black;
+    font-family: 'Montserrat';
+    padding: 16px 0;
+    font-size: 24px;
+}
+
+.card-1 {
+    order: 1;
+}
+
+.card-2 {
+    order: 2;
+}
+
+.card-3 {
+    order: 5;
+    width: 100%;
+}
+
+.card-3 a img {
+    width: 50%;
+}
+
+.card-4 {
+    order: 4;
+}
+
+.card-5 {
+    order: 3;
+}
+
+.exhibitions img {
+    border-radius: 50%;
+    width: 100%;
+}
 
 
 
@@ -295,15 +394,35 @@ header {
         bottom: 100px;
     }
 
-    .speech-bubble-2 {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 20%;
+    .hero-below {
+        height: 900px;
     }
 
-    .dr-egghead-vertical {
-        margin-left: 45%;
+    .speech-bubble-2 {
+        margin-top: 10%;
     }
+
+    .orion {
+        display: block;
+    }
+
+    .heading-exhibitions img {
+        display: block;
+    }
+
+    h1, h2 {
+        font-size: 32px;
+    }
+
+    .card {
+        width: 15%;
+    }
+
+    .card-3 a img {
+        width: 100%;
+    }
+
+    
 
 
  
@@ -313,6 +432,19 @@ header {
   @media (min-width: 900px) {
       .moon {
           bottom: 200px;
+      }
+
+      .hero-below-text {
+          padding-top: 15%;
+      }
+  }
+
+  @media (min-width: 1300px) {
+      .hero-below-text {
+          padding-top: 10%;
+      }
+      .speech-bubble-2 {
+          margin-top: 5%;
       }
   }
 
