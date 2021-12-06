@@ -51,7 +51,8 @@ header {
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 10%;
   }
 
   .logo img {
@@ -337,6 +338,7 @@ header {
 
 .card-3 a img {
     width: 50%;
+    max-width: 280px;
 }
 
 .card-4 {
@@ -352,7 +354,124 @@ header {
     width: 100%;
 }
 
+/* NEWS AND EVENTS SECTION */
 
+.news-and-events-section {
+    background-color: #DFF0FD;
+    text-align: center;
+}
+
+.news-and-events-section h2 {
+    padding: 60px 0px 60px 0px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-card {
+    background-color: white;
+    max-width: 480px;
+    min-height: 600px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 30px;
+    margin: 0 30px 30px 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.news-card img {
+    width: 100%;
+    max-height: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.news-card p {
+    color: black;
+    font-size: 16px;
+    padding-bottom: 60px;
+    
+}
+
+.news-card a {
+    color: black;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 30px;
+    padding: 10px 10px 10px 0px;
+}
+
+.news-card h3 {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    margin: 24px 0px 24px;
+}
+
+/* DR EGGHEAD AT BOTTOM OF HOME PAGE */
+
+.dr-egghead-bottom {
+    background-color: #DFF0FD;
+    padding-left: 10%;
+    padding-top: 40px;
+}
+
+.speech-bubble-bottom {
+    width: 90%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.speech-bubble-bottom img {
+    width: 100%;
+    max-width: 250px;
+    position: absolute;
+}
+
+.dr-egghead-bottom p {
+    color: black;
+    width: 100%;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.dr-egghead-bottom a {
+    color: black;
+    text-decoration: underline;
+}
+
+.dr-egghead-bottom-img {
+    margin-top: 100px;
+    margin-bottom: -4px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #145E95;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 80px 10%;
+    gap: 40px;
+}
+
+.social-media-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
 
 
 
@@ -376,13 +495,13 @@ header {
       .speech-bubble {
         width: 372px;
         height: 394px;
-        margin-left: 25%;
+        margin-left: 20%;
 
     }
     .dr-egghead-1 {
-        transform: rotate(-90deg) scale(1.2);
+        transform: rotate(-90deg);
         margin-top: 0px;
-        margin-left: 15%;
+        margin-left: 10%;
         
     }
     .speech-text p {
@@ -422,6 +541,18 @@ header {
         width: 100%;
     }
 
+    .dr-egghead-bottom {
+        padding-left: 25%;
+    }
+
+    .speech-bubble-bottom, .speech-bubble-bottom img {
+        max-width: 280px;
+    }
+
+    .speech-bubble-bottom p, .speech-bubble-bottom a {
+        font-size: 20px;
+    }
+
     
 
 
@@ -445,6 +576,12 @@ header {
       }
       .speech-bubble-2 {
           margin-top: 5%;
+      }
+      .news-card {
+          min-height: 637px;
+      }
+      .news-card p {
+          font-size: 20px;
       }
   }
 
