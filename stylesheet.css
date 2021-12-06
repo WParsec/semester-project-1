@@ -53,6 +53,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 10%;
+    position: relative;
   }
 
   .logo img {
@@ -60,12 +61,13 @@ header {
   }
   
   nav {
-    position: fixed;
+    position: absolute;
     top: 70px;
     background: #145E95;
     width: 100%;  
     display: none;
     z-index: 1000;
+    margin-left: -10%;
   }
   
   .nav-links {
