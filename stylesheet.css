@@ -44,6 +44,10 @@ body {
     overflow-x: hidden;
 }
 
+.email-underline {
+    text-decoration: underline;
+}
+
 /* HEADER NAV */
 
 header {
@@ -481,24 +485,138 @@ footer {
 }
 
 
+/* EXPLORE PAGE */
+
+.explore-hero {
+    background-image: url(/images/explore.jpg);
+    background-color: #091E2E;
+    min-height: 950px;
+    height: fit-content;
+    background-position-x: -100px ;
+    text-align: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.explore-hero h1 {
+    color: white;
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+.text-container {
+    text-align: left;
+    max-width: 650px;
+    margin: 80px auto 0px;
+    background-color: #091E2E;
+    padding: 32px;
+}
+
+.text-container h2 {
+    color: white;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+
+.text-container p {
+    margin: 24px 0 0px;
+    font-size: 20px;
+}
+
+/* HIDDEN DR. EGGHEAD */
+
+.hidden-egghead-wrap {
+    padding: 0 32px;
+    max-width: 650px;
+    margin: 0 auto 0px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.hidden-egghead-wrap label img {
+    width: 110px;
+    margin-top: 80px;
+}
+
+.hidden-egghead-wrap label img:hover {
+    cursor: pointer;
+    filter: brightness(1.5);
+}
+
+.egghead-revealed {
+    display: none;
+    margin-right: -30px;
+}
+
+#flashlight {
+    display: none;
+    position: relative;
+    z-index: 1000;
+}
+
+.dark-egghead {
+    margin-top: 4px;
+    padding-top: 86px;
+}
+
+#flashlight:checked ~ .egghead-revealed {
+    display: block;
+}
+
+#flashlight:checked ~ .dark-egghead {
+    display: none;
+}
+
+/* FOR TEACHERS SECTION */
+
+.for-teachers {
+    background-color: #DFF0FD;
+}
+
+.for-teachers p {
+    color: black;
+    font-size: 20px;
+    height: fit-content;
+}
+
+.text-container-for-teachers {
+    text-align: left;
+    max-width: 650px;
+    padding: 32px;
+    margin: 0 auto;
+}
+
+.for-teachers h2 {
+    font-family: 'Montserrat';
+    color: black;
+    padding-top: 40px;
+}
+
+.for-teachers p {
+    margin-top: 24px;
+}
+
+.for-teachers img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 80%;
+    max-width: 350px;
+}
+
+
+
+
+
+
+
+
+
+
 
   @media (min-width: 800px) {
-      .hamburger-icon {
-          display: none;
-      }
-      .nav-links {
-        flex-direction: row;
-        justify-content: space-between;
-      }
-      nav li {
-          padding: 0px;
-      }
-      nav {
-          top: 0;
-          position: inherit;
-          display: block;
-          width: 60%;
-      }
+
       .speech-bubble {
         width: 372px;
         height: 394px;
@@ -553,7 +671,7 @@ footer {
     }
 
     .speech-bubble-bottom, .speech-bubble-bottom img {
-        max-width: 280px;
+        max-width: 300px;
     }
 
     .speech-bubble-bottom p, .speech-bubble-bottom a {
@@ -576,6 +694,26 @@ footer {
           padding-top: 15%;
       }
   }
+
+  @media (min-width: 1000px) {
+
+    .hamburger-icon {
+        display: none;
+    }
+    .nav-links {
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    nav li {
+        padding: 0px;
+    }
+    nav {
+        top: 0;
+        position: inherit;
+        display: block;
+        width: 60%;
+    }
+}
 
   @media (min-width: 1300px) {
       .hero-below-text {
