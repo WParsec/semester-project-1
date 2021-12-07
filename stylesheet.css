@@ -380,6 +380,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .news-card {
@@ -621,7 +622,6 @@ footer {
         width: 372px;
         height: 394px;
         margin-left: 20%;
-
     }
     .dr-egghead-1 {
         transform: rotate(-90deg);
@@ -660,6 +660,10 @@ footer {
 
     .card {
         width: 15%;
+    }
+
+    .card-3 {
+        order: 3;
     }
 
     .card-3 a img {
@@ -723,7 +727,8 @@ footer {
           margin-top: 5%;
       }
       .news-card {
-          min-height: 637px;
+          min-height: 777px;
+          width: 25%;
       }
       .news-card p {
           font-size: 20px;
