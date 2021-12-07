@@ -168,11 +168,6 @@ header {
     z-index: 0;
 }
 
-.hero-below {
-    position: relative;
-    width: 100%;
-}
-
 .moon-overflow {
     width: 100%;
     height: 100%;
@@ -201,9 +196,10 @@ header {
 /* HERO HOMEPAGE PART 2 */
 
 .hero-below {
-    background-image: url(/images/home-bg-2.jpg);
+    background-color: #091E2E;
     height: 1000px;
     position: relative;
+    width: 100%;
 }
 
 .hero-below-text {
@@ -380,7 +376,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
 }
 
 .news-card {
@@ -575,27 +570,25 @@ footer {
     background-color: #DFF0FD;
 }
 
-.for-teachers p {
+.for-teachers p, .for-researchers p{
     color: black;
     font-size: 20px;
     height: fit-content;
+    margin-top: 24px;
 }
 
-.text-container-for-teachers {
+.text-container-for-teachers, .text-container-for-researchers {
     text-align: left;
     max-width: 650px;
     padding: 32px;
     margin: 0 auto;
 }
 
-.for-teachers h2 {
+.for-teachers h2, .for-researchers h2 {
     font-family: 'Montserrat';
     color: black;
     padding-top: 40px;
-}
-
-.for-teachers p {
-    margin-top: 24px;
+    text-transform: uppercase;
 }
 
 .for-teachers img {
@@ -603,8 +596,90 @@ footer {
     margin: 0 auto;
     padding-top: 40px;
     width: 80%;
-    max-width: 350px;
+    max-width: 300px;
+    padding-bottom: 32px;
 }
+
+/* FOR RESEARCHERS SECTION */
+
+.for-researchers {
+    background-color: #FAF9F5;
+}
+
+.for-researchers img {
+    padding: 80px 0px 0px;
+    width: 80%;
+    max-width: 280px;
+}
+
+/* VISIT SECTION */
+
+
+.hero-visit {
+    background-image: url(/images/visit.jpg);
+    background-position-y: -200px;
+    min-height: 800px;
+}
+
+.heading-visit {
+    background-color: #FAF9F5;
+    text-align: center;
+}
+
+.heading-visit h1 {
+    color: #145E95;
+    padding: 80px 0px;
+    font-size: 40px;
+}
+
+.visit-information h3, .visit-information a {
+    color: black;
+}
+
+.visit-card h3 {
+    padding: 80px 0px 40px;
+    font-family: 'Montserrat';
+    font-size: 32px;
+}
+
+.visit-information p {
+    color: black;
+    margin: 40px 0px;
+    font-size: 20px;
+}
+
+.visit-information {
+    background-color: #FAF9F5;
+}
+
+.visit-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    gap: 40px ;
+}
+
+.visit-card {
+    padding-bottom: 40px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.visit-card-1 {
+    background-color: #97C0DE;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
 
 
 
