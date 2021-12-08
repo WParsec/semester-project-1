@@ -568,6 +568,7 @@ footer {
 
 .for-teachers {
     background-color: #DFF0FD;
+    padding: 80px 0 80px;
 }
 
 .for-teachers p, .for-researchers p{
@@ -596,7 +597,7 @@ footer {
     margin: 0 auto;
     padding-top: 40px;
     width: 80%;
-    max-width: 300px;
+    max-width: 270px;
     padding-bottom: 32px;
 }
 
@@ -604,12 +605,13 @@ footer {
 
 .for-researchers {
     background-color: #FAF9F5;
+    padding: 100px 0 100px;
 }
 
 .for-researchers img {
     padding: 80px 0px 0px;
     width: 80%;
-    max-width: 280px;
+    max-width: 250px;
 }
 
 /* VISIT SECTION */
