@@ -16,7 +16,7 @@
     list-style: none;
 }
 
-li, a {
+li, a  {
     font-family: 'Montserrat';
     color: white;
     text-decoration: none;
@@ -617,8 +617,8 @@ footer {
 
 .hero-visit {
     background-image: url(/images/visit.jpg);
-    background-position-y: -200px;
-    min-height: 800px;
+    height: 700px;
+    background-position-y: -100px;
 }
 
 .heading-visit {
@@ -644,35 +644,64 @@ footer {
 
 .visit-information p {
     color: black;
-    margin: 40px 0px;
+    margin: 1em 0px;
     font-size: 20px;
 }
 
 .visit-information {
     background-color: #FAF9F5;
+    padding: 0 10% 120px;
 }
 
 .visit-flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: space-evenly;
     margin: 0 auto;
-    gap: 40px ;
+    gap: 2em;
 }
 
 .visit-card {
-    padding-bottom: 40px;
-    max-width: 400px;
-    width: 100%;
     border-radius: 20px;
+    text-align: center;
+    flex: 1 1 calc(33.3% - 2em);
+    padding: 0 3em 3em;
+    min-width: 310px;
+    width: 100%;
+}
+
+.visit-card a {
+    text-decoration: underline;
+    text-transform: none;
 }
 
 .visit-card-1 {
     background-color: #97C0DE;
-    text-align: center;
 }
 
+.visit-card-2 {
+    background-color: #FFF4E8;
+}
+
+.visit-card-3 {
+    background-color: #E9F4EC;
+}
+
+.visit-card-3 p, .visit-card-4 p, .visit-card-5 p, .visit-card-6 p {
+    text-align: left;
+}
+
+.visit-card-4 {
+    background-color: #F2F2F2;
+}
+
+.visit-card-5 {
+    background-color: #FBFDE5;
+}
+
+.visit-card-6 {
+    background-color: #DFF0FD;
+}
 
 
 
@@ -750,7 +779,7 @@ footer {
     }
 
     .speech-bubble-bottom, .speech-bubble-bottom img {
-        max-width: 300px;
+        max-width: 320px;
     }
 
     .speech-bubble-bottom p, .speech-bubble-bottom a {
