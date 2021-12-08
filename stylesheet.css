@@ -618,7 +618,8 @@ footer {
 .hero-visit {
     background-image: url(/images/visit.jpg);
     height: 700px;
-    background-position-y: -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .heading-visit {
