@@ -32,7 +32,7 @@ h1 {
     font-family: 'nulshock';
 }
 
-h2 {
+h2, .h1-blue {
     font-family: 'nulshock';
     font-size: 24px;
     color: #145E95;
@@ -688,7 +688,7 @@ footer {
 }
 
 .visit-card-1 {
-    background-color: #97C0DE;
+    background-color: #DFF0FD;
 }
 
 .visit-card-2 {
@@ -725,6 +725,8 @@ footer {
     background-position-y: -50px;
 }
 
+
+
 /* COSMOLOGY SECTION */
 
 .cosmo-section {
@@ -747,13 +749,41 @@ footer {
 
 .cosmology {
     background-color: #091E2E;
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.cosmo-flex {
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 90%;
-    height: 800px;
-    margin: 0 auto;
-    padding: 150px;
+    gap: 20px;
+    padding: 100px 0px 100px;
+    
+}
+
+.cosmo-img {
+    height: fit-content;
+    flex: 1 1 30%;
+    max-width: 260px;
+}
+
+.cosmo-text-1 {
+    flex: 1 1 70%;
+    max-width: 500px;
+}
+
+.cosmo-text-2 {
+    flex: 2 0 70%;
+    max-width: 500px;
+}
+
+.cosmo-orion {
+    flex: 1 1 30%;
+    max-width: 300px;
 }
 
 .cosmo-img img {
@@ -763,34 +793,14 @@ footer {
     display: block;
     margin: auto;
     width: 100%;
-    max-width: 260px;
-}
-
-.cosmo-img {
-    flex: 0 1 35%;
-}
-
-.cosmo-text-1 {
-    flex: 0 1 50%;
-}
-
-.cosmo-text-2 {
-    flex: 0 1 35%;
-}
-
-.cosmo-orion {
-    flex: 0 1 50%;
-    margin-top: 80px;
 }
 
 .cosmo-orion img {
     display: block;
     margin: auto;
-    width: 50%;
+    width: 100%;
+    
 }
-
-
-
 
 
 
@@ -842,6 +852,10 @@ footer {
 
     .heading-exhibitions img {
         display: block;
+    }
+
+    .h1-blue {
+        font-size: 32px;
     }
 
     h1, h2 {
