@@ -435,7 +435,7 @@ header {
 .dr-egghead-bottom {
     background-color: #DFF0FD;
     padding-left: 10%;
-    padding-top: 40px;
+    padding-top: 80px;
 }
 
 .speech-bubble-bottom {
@@ -720,7 +720,7 @@ footer {
 
 .hero-exhibitions {
     background-color: #091E2E;
-    background-image: url(/images/exhibitions-bg.jpg);
+    background-image: url(/images/exhibitions-bg-small.jpg);
     min-height: 500px;
     background-position-y: -50px;
 }
@@ -736,7 +736,7 @@ footer {
     background-position-x: -200px;
 }
 
-.cosmo-section p {
+.cosmo-section p, .evolution-section p, .bioligy-section p, .robotics-section p, .ecology-section p {
     margin: 1em 0px;
     font-size: 20px;
 }
@@ -747,60 +747,139 @@ footer {
     font-size: 24px;
 }
 
-.cosmology {
-    background-color: #091E2E;
+.background {
     width: 90%;
     height: fit-content;
     margin: 0 auto;
 }
 
-.cosmo-flex {
+.cosmology-background {
+    background-color: #091E2E;
+}
+
+.flex-container {
     width: 80%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 20px;
-    padding: 100px 0px 100px;
-    
+    gap: 24px;
+    padding: 100px 0px 100px;  
 }
 
-.cosmo-img {
+.exhibit-img {
     height: fit-content;
     flex: 1 1 30%;
     max-width: 260px;
 }
 
-.cosmo-text-1 {
+.exhibit-text-1 {
     flex: 1 1 70%;
     max-width: 500px;
 }
 
-.cosmo-text-2 {
+.exhibit-text-2 {
     flex: 2 0 70%;
     max-width: 500px;
 }
 
-.cosmo-orion {
+.exhibit-icon {
     flex: 1 1 30%;
     max-width: 300px;
 }
 
-.cosmo-img img {
+.exhibit-img img {
     border-radius: 50%;
-    border: 4px black solid;
     filter: drop-shadow(#050e16 0 0 15px);
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.cosmo-section .exhibit-img img {
+    boder: 4px black solid;
+}
+
+.exhibit-icon img {
     display: block;
     margin: auto;
     width: 100%;
 }
 
-.cosmo-orion img {
-    display: block;
-    margin: auto;
-    width: 100%;
-    
+
+/* EVOLUTION SECTION */ 
+
+.evolution-section {
+    background-image: url(/images/evolution-bg.jpg);
+    background-size: 40% 100%;
+    background-repeat: repeat;
+    background-position-x: -200px;
 }
+
+.evolution-background {
+    background-color: #E9F4EC;
+}
+
+.evolution-section p, .bioligy-section p, .robotics-section p, .ecology-section p {
+    color: black;
+}
+
+.evolution-section .exhibit-icon img, .bioligy-section .exhibit-icon img, .robotics-section .exhibit-icon img, .ecology-section .exhibit-icon img {
+    width: 50%;
+}
+
+.evolution-section h3, .bioligy-section h3, .robotics-section h3, .ecology-section h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+/* BIOLIGY SECTION */
+
+.bioligy-section {
+    background-image: url(/images/bioligy-bg.jpg);
+}
+
+.bioligy-background {
+    background-color: #FFF4E8;
+}
+
+/* ROBOTICS SECTION */
+
+.robotics-section {
+    background-image: url(/images/robotics-bg.jpg);
+}
+
+.robotics-background {
+    background-color: #F2F2F2;
+}
+
+
+/* ECOLOGY SECTION */ 
+
+.ecology-section {
+    background-image: url(/images/turtle.jpg);
+}
+
+.ecology-background {
+    background-color: #DFF0FD;
+    height: fit-content;
+}
+
+.back-to-top, .back-to-top a {
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -814,11 +893,15 @@ footer {
     }
 }
 
-
+@media (min-width: 600px) {
+    .hero-exhibitions {
+        background-image:url(/images/exhibitions-bg.jpg) ;
+    }
+}
 
   @media (min-width: 800px) {
 
-      .speech-bubble {
+    .speech-bubble {
         width: 372px;
         height: 394px;
         margin-left: 20%;
@@ -894,13 +977,13 @@ footer {
   }
 
   @media (min-width: 900px) {
-      .moon {
-          bottom: 200px;
-      }
+    .moon {
+        bottom: 200px;
+    }
 
-      .hero-below-text {
-          padding-top: 15%;
-      }
+    .hero-below-text {
+        padding-top: 15%;
+    }
 
 
   }
@@ -926,17 +1009,17 @@ footer {
 }
 
   @media (min-width: 1300px) {
-      .hero-below-text {
-          padding-top: 10%;
-      }
-      .speech-bubble-2 {
-          margin-top: 5%;
-      }
-          
-      .news-card p {
-          font-size: 20px;
-      }
-  }
+    .hero-below-text {
+        padding-top: 10%;
+    }
+    .speech-bubble-2 {
+        margin-top: 5%;
+    }
+        
+    .news-card p {
+        font-size: 20px;
+    }
+}
 
   @media (min-width: 1400px) {
     .moon {
