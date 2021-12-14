@@ -5,7 +5,23 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url(../fonts/Montserrat-Regular.ttf);
+    src: url(/fonts/Montserrat-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/Montserrat-Regular.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/Montserrat-SemiBold.ttf);
+    font-weight: bold;
+    font-style: normal;
 }
 
 * {
@@ -26,16 +42,20 @@ li, a  {
 p {
     font-family: 'Montserrat';
     color: white;
+    font-weight: normal;
 }
 
 h1 {
     font-family: 'nulshock';
+    color: white;
+    font-size: 32px;
 }
 
-h2, .h1-blue {
-    font-family: 'nulshock';
-    font-size: 24px;
-    color: #145E95;
+h2 {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    color: black;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -52,16 +72,18 @@ body {
     text-decoration: underline;
 }
 
-/* HEADER NAV */
+/* ------------------------ HEADER NAV ---------------------------- */
 
 header {
-    background-color: #145E95;
+    background-color: #091E2E;
+    background-image: url(/images/hero-bg-star.png);
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 10%;
     position: relative;
+    border-bottom: 1px solid whitesmoke;
   }
 
   .logo img {
@@ -70,8 +92,8 @@ header {
   
   nav {
     position: absolute;
+    background-image: url(/images/hero-bg-star.png);
     top: 70px;
-    background: #145E95;
     width: 100%;  
     display: none;
     z-index: 1000;
@@ -92,11 +114,11 @@ header {
   }
 
   .nav-links a:hover {
-      border-bottom: 1px solid white;
+      transform: scale(1.2);
   }
 
   .current {
-    border-bottom: 1px solid white;
+    font-weight: bold;
   }
 
   nav li {
@@ -112,13 +134,14 @@ header {
     display: block;
   }
 
-/* HOMEPAGE */
+/* ----------------------------- HOMEPAGE ------------------------- */
 
 /* HOMEPAGE HERO */
 
 .hero-home {
-    background-color: #145E95;
-    background-image: url(/images/bg-home.jpg);
+    background-color: ;
+    background-image: url(/images/hero-bg-star.png);
+    background-size: cover;
     height: 715px;
     position: relative;
     overflow-y: visible;
@@ -166,7 +189,8 @@ header {
 }
 
 .blue-line {
-    background-color: #97C0DE;
+    background-color: #F2F2F2;
+    background: linear-gradient(0.75turn, #ed8e61, #c373ff, #33c6ff);
     height: 16px;
     position: relative;
     z-index: 0;
@@ -297,7 +321,7 @@ header {
 /* HEADING EXHIBITIONS */
 
 .heading-exhibitions {
-    background-color: #DFF0FD;
+    background: linear-gradient(0.75turn, #ed8e61, #c373ff, #33c6ff);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -310,14 +334,20 @@ header {
     max-width: 150px;
 }
 
+.heading-exhibitions h2 {
+    color: black;
+    text-align: center;
+}
+
 /* EXHIBITION SECTION */
 
 .exhibitions {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap-reverse;
-    padding: 40px 0 40px 0;
+    padding: 120px 0 120px 0;
     height: fit-content;
+    background-color: ghostwhite;
 }
 
 .card {
@@ -330,6 +360,7 @@ header {
 .card p {
     color: black;
     font-family: 'Montserrat';
+    font-weight: 500;
     padding: 16px 0;
     font-size: 24px;
 }
@@ -373,12 +404,15 @@ header {
 /* NEWS AND EVENTS SECTION */
 
 .news-and-events-section {
-    background-color: #DFF0FD;
+    background-color: #091E2E;
+    background-image: radial-gradient( #1a4464, #091E2E);
     text-align: center;
+    padding-bottom: 80px;
 }
 
 .news-and-events-section h2 {
-    padding: 60px 0px 60px 0px;
+    padding: 80px 0px 80px 0px;
+    color: white;
 }
 
 .card-container {
@@ -397,7 +431,6 @@ header {
     padding: 30px;
     border-radius: 20px;
     position: relative;
-    filter: drop-shadow( #8bb8d8 0px 0px 15px);
 }
 
 .news-card:hover {
@@ -430,10 +463,82 @@ header {
     margin: 24px 0px 24px;
 }
 
+/* GET INVOLVED */
+
+.get-involved {
+    background-color: #091E2E;
+    background-image: radial-gradient( #1a4464, #091E2E);
+    text-align: center;
+    padding: 0 10%;
+}
+
+.get-involved p {
+    color: black;
+    font-size: 20px;
+    text-align: left;
+}
+
+.get-involved h2 {
+    color: white;
+    padding: 80px 0px 80px;
+}
+
+.get-involved-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: space-between;
+}
+
+.get-involved-card {
+    flex: 0 1 30%;
+    border-radius: 20px;
+    padding: 2em;
+}
+
+.get-involved-card:hover {
+    transform: scale(1.1);
+}
+
+.get-involved-card h3 {
+    margin-bottom: 1em;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.support {
+    background-color: #FFF4E8;
+}
+
+.volenteer {
+    background-color: #DFF0FD;
+}
+
+.internship {
+    background-color: #E9F4EC;
+}
+
+.get-involved-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-mail {
+    background: linear-gradient(0.75turn, #ed8e61, #c373ff, #33c6ff);
+    padding: 2em;
+    border-radius: 20px;
+    margin: 80px auto 120px;
+}
+
+.contact-mail p {
+    font-weight: 500;
+}
+
 /* DR EGGHEAD AT BOTTOM OF HOME PAGE */
 
 .dr-egghead-bottom {
-    background-color: #DFF0FD;
+    background-color: ghostwhite;
     padding-left: 10%;
     padding-top: 80px;
 }
@@ -472,7 +577,7 @@ header {
 /* FOOTER */
 
 footer {
-    background-color: #145E95;
+    background-color: #091E2E;
 }
 
 .footer-wrap {
@@ -491,20 +596,30 @@ footer {
 }
 
 
-/* EXPLORE PAGE */
+/* ----------------------------- EXPLORE PAGE ------------------------- */
 
-.explore-hero {
+.hero {
+    background-color: #091E2E;
+    background-image:url(/images/hero-bg-star.png);
+}
+
+.hero-text {
+    padding: 200px 0 200px;
+    text-align: center;
+}
+
+.for-kids {
     background-image: url(/images/explore.jpg);
     background-color: #091E2E;
-    min-height: 950px;
     height: fit-content;
     background-position-x: -100px ;
     text-align: center;
     background-repeat: no-repeat;
     position: relative;
+    padding-top: 120px;
 }
 
-.explore-hero h1 {
+.for-kids h1 {
     color: white;
     font-size: 40px;
     padding-top: 80px;
@@ -513,7 +628,7 @@ footer {
 .text-container {
     text-align: left;
     max-width: 650px;
-    margin: 80px auto 0px;
+    margin: 0px auto 0px;
     background-color: #091E2E;
     padding: 32px;
 }
@@ -577,7 +692,7 @@ footer {
 /* FOR TEACHERS SECTION */
 
 .for-teachers {
-    background-color: #DFF0FD;
+    background-color: ghostwhite;
     padding: 80px 0 80px;
 }
 
@@ -614,7 +729,7 @@ footer {
 /* FOR RESEARCHERS SECTION */
 
 .for-researchers {
-    background-color: #FAF9F5;
+    background-color: ghostwhite;
     padding: 100px 0 100px;
 }
 
@@ -626,24 +741,6 @@ footer {
 
 /* VISIT SECTION */
 
-
-.hero-visit {
-    background-image: url(/images/visit.jpg);
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.heading-visit {
-    background-color: #FAF9F5;
-    text-align: center;
-}
-
-.heading-visit h1 {
-    color: #145E95;
-    padding: 80px 0px;
-    font-size: 40px;
-}
 
 .visit-information h3, .visit-information a {
     color: black;
@@ -662,7 +759,7 @@ footer {
 
 .visit-information {
     background-color: #FAF9F5;
-    padding: 0 10% 120px;
+    padding: 120px 10% 160px;
 }
 
 .visit-flex-container {
@@ -720,14 +817,7 @@ footer {
 }
 
 
-/* EXHIBITIONS PAGE */
-
-.hero-exhibitions {
-    background-color: #091E2E;
-    background-image: url(/images/exhibitions-bg-small.jpg);
-    min-height: 500px;
-    background-position-y: -50px;
-}
+/* ----------------------- EXHIBITIONS PAGE ----------------------- */
 
 
 
@@ -877,7 +967,7 @@ footer {
 }
 
 
-/* NEWS AND EVENTS PAGE */
+/* ------------------------ NEWS AND EVENTS PAGE ----------------------- */
 
 .events-container img {
     width: 100%;
@@ -890,22 +980,24 @@ footer {
 .events-page h3 {
     margin: 0;
     font-size: 32px;
+    font-weight: 500;
 }
 
 .events-container p {
     color: black;
     font-size: 1.2rem;
-    margin: 1em 0;
+    margin: 1em 0 0;
 }
 
 .events-page {
-    background-color: #e7eff5;
+    background: whitesmoke;
+    padding: 120px 10% 0px;
 }
 
 .events-page h1 {
     padding: 80px 0 80px;
     text-align: center;
-    color: #145E95;
+    color: #091E2E;
 }
 
 .events-container {
@@ -916,13 +1008,12 @@ footer {
 .event-card-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 80px;
 }
 
 .events-card {
     display: flex;
     flex-direction: column;
-    background-color: white;
     border-radius: 20px;
     padding: 1rem;
 }
@@ -960,7 +1051,7 @@ footer {
 
 
 
-
+/* ------------------------ MEDIA QUERIES ------------------------ */
 
 
 @media (min-width: 400px) {
@@ -970,12 +1061,6 @@ footer {
 
     .news-card img {
         height: 150px;
-    }
-}
-
-@media (min-width: 600px) {
-    .hero-exhibitions {
-        background-image:url(/images/exhibitions-bg.jpg) ;
     }
 }
 
@@ -1022,7 +1107,7 @@ footer {
     }
 
     h1, h2 {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .card {
@@ -1082,6 +1167,7 @@ footer {
         position: inherit;
         display: block;
         width: 60%;
+        background: transparent;
     }
     .events-card {
         flex-direction: row;
