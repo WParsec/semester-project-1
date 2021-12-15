@@ -695,25 +695,30 @@ footer {
 
 /* FOR TEACHERS SECTION */
 
+.container {
+    width: 80%;
+    margin: auto;
+}
+
 .for-teachers {
     background-color: whitesmoke;
 }
 
-.for-teachers-flex {
+.for-teachers-flex, .for-researchers-flex {
     display: flex;
     flex-direction: column;
-    margin: 120px auto;
+    margin: 240px auto;
     gap: 40px;
-    width: 80%;
 }
 
-.for-teachers-img {
+.for-teachers-img, .for-researchers-img {
     border-radius: 20px;
     object-fit: cover;
     flex: 0 0 50%;
+    height: 300px;
 }
 
-.for-teachers img {
+.for-teachers img, .for-researchers img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -723,6 +728,7 @@ footer {
 .text-container-for-teachers {
     text-align: left;
     max-width: 650px;
+    height: 300px;
     margin: 0 auto;
     flex: 0 0 50%;
 }
@@ -735,24 +741,11 @@ footer {
     margin-top: 24px;
 }
 
-.explore-mail p {
-    margin: 0px;
-}
-
-}
 
 /* FOR RESEARCHERS SECTION */
 
-.for-researchers {
-    background-color: whitesmoke;
-    padding: 100px 0 100px;
-}
 
-.for-researchers img {
-    padding: 80px 0px 0px;
-    width: 80%;
-    max-width: 250px;
-}
+
 
 /* VISIT SECTION */
 
@@ -848,32 +841,37 @@ footer {
 .cosmo-section p, .evolution-section p, .bioligy-section p, .robotics-section p, .ecology-section p {
     margin: 1em 0px;
     font-size: 20px;
+    color: black;
 }
 
 .cosmo-section h3 {
-    color: white;
+    color: black;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .background {
     width: 90%;
     height: fit-content;
     margin: 0 auto;
+    background-color: whitesmoke;
 }
 
 .cosmology-background {
-    background-color: #091E2E;
+    background-color: whitesmoke;
 }
 
 .flex-container {
     width: 80%;
-    margin: auto;
+    margin: 80px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 24px;
-    padding: 100px 0px 100px;  
+    padding: 100px 0px 100px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: rgb(206, 206, 206) 0px 0px 20px;
 }
 
 .exhibit-img {
@@ -905,10 +903,6 @@ footer {
     width: 80%;
 }
 
-.cosmo-section .exhibit-img img {
-    boder: 4px black solid;
-}
-
 .exhibit-icon img {
     display: block;
     margin: auto;
@@ -925,10 +919,6 @@ footer {
     background-position-x: -200px;
 }
 
-.evolution-background {
-    background-color: #E9F4EC;
-}
-
 .evolution-section p, .bioligy-section p, .robotics-section p, .ecology-section p {
     color: black;
 }
@@ -939,7 +929,7 @@ footer {
 
 .evolution-section h3, .bioligy-section h3, .robotics-section h3, .ecology-section h3 {
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 /* BIOLIGY SECTION */
@@ -948,18 +938,10 @@ footer {
     background-image: url(/images/bioligy-bg.jpg);
 }
 
-.bioligy-background {
-    background-color: #FFF4E8;
-}
-
 /* ROBOTICS SECTION */
 
 .robotics-section {
     background-image: url(/images/robotics-bg.jpg);
-}
-
-.robotics-background {
-    background-color: #F2F2F2;
 }
 
 
@@ -970,7 +952,6 @@ footer {
 }
 
 .ecology-background {
-    background-color: #DFF0FD;
     height: fit-content;
 }
 
@@ -1155,6 +1136,10 @@ footer {
 
     .for-teachers-flex {
         flex-direction: row;
+    }
+
+    .for-researchers-flex {
+        flex-direction: row-reverse;
     }
 
  
