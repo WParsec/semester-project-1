@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'nulshock';
+    font-family: 'nulshock', Verdana, Tahoma, sans-serif;
     src: url(../fonts/nulshock\ bd.ttf);
 }
 
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Verdana, Tahoma, sans-serif;
     src: url(/fonts/Montserrat-Light.ttf);
     font-weight: normal;
     font-style: normal;
@@ -33,7 +33,7 @@
 }
 
 li, a  {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Verdana, Tahoma, sans-serif;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -137,6 +137,49 @@ header {
   #checkbox:checked ~ nav {
     display: block;
   }
+
+/* ------------------------- FOOTER ------------------------- */
+
+footer {
+    background-color: #091E2E;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 10%;
+    gap: 40px;
+}
+
+.footer-text-wrap p {
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.social-media-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.copyright {
+    font-size: 0.8em;
+    padding-left: 10%;
+    padding-bottom: 2em;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-links a {
+    padding-bottom: 1em;
+    width: 100%;
+}
 
 /* ----------------------------- HOMEPAGE ------------------------- */
 
@@ -415,11 +458,11 @@ header {
     background-color: #091E2E;
     background-image: radial-gradient( #1a4464, #091E2E);
     text-align: center;
-    padding-bottom: 80px;
+    padding-bottom: 250px;
 }
 
 .news-and-events-section h2 {
-    padding: 120px 0px 80px 0px;
+    padding: 120px 0px 120px 0px;
     color: white;
 }
 
@@ -432,7 +475,7 @@ header {
 }
 
 .news-card {
-    background-color: white;
+    background-color: whitesmoke;
     flex: 1 1 calc(33.3% - 2em);
     width: 100%;
     text-align: left;
@@ -474,10 +517,9 @@ header {
 /* GET INVOLVED */
 
 .get-involved {
-    background-color: #091E2E;
-    background-image: radial-gradient( #1a4464, #091E2E);
+    background-color: whitesmoke;
     text-align: center;
-    padding: 0 10%;
+    padding: 0px 10%;
 }
 
 .get-involved p {
@@ -487,8 +529,8 @@ header {
 }
 
 .get-involved h2 {
-    color: white;
-    padding: 120px 0px 80px;
+    color: black;
+    padding: 120px 0px 120px;
 }
 
 .get-involved-flex {
@@ -548,7 +590,6 @@ header {
 .dr-egghead-bottom {
     background-color: whitesmoke;
     padding-left: 10%;
-    padding-top: 80px;
 }
 
 .speech-bubble-bottom {
@@ -582,28 +623,6 @@ header {
     margin-bottom: -4px;
 }
 
-/* FOOTER */
-
-footer {
-    background-color: #091E2E;
-}
-
-.footer-wrap {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding: 80px 10%;
-    gap: 40px;
-}
-
-.social-media-flex {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-}
-
-
 /* ----------------------------- EXPLORE PAGE ------------------------- */
 
 .hero {
@@ -614,35 +633,63 @@ footer {
 .hero-text {
     padding: 200px 0 200px;
     text-align: center;
+    width: fit-content;
+    margin: auto;
 }
+
+.hero-text a {
+    display: block;
+    margin-top: 1em;
+    text-align: left;
+    
+}
+
+/* --------------------------- FOR KIDS ----------------------------- */ 
 
 .for-kids {
-    background-color: whitesmoke;
-    height: fit-content;
-    background-position-x: -100px ;
-    text-align: center;
-    background-repeat: no-repeat;
-    position: relative;
-    padding: 120px 0 120px;
+    padding: 120px 0;
 }
 
-.text-container {
-    text-align: left;
-    max-width: 650px;
-    margin: 0px auto 0px;
-}
-
-.text-container h2 {
+.for-kids p, .teachers-and-researchers-section p {
     color: black;
-    font-family: 'Montserrat';
-    text-transform: uppercase;
-}
-
-.text-container p {
-    margin: 24px 0 0px;
     font-size: 20px;
-    color: black;
+    padding-bottom: 1em;
 }
+
+.for-kids h2, .teachers-and-researchers-section h2 {
+    margin-bottom: 40px;
+}
+
+.content-container {
+    width: 80%;
+    margin: auto;
+    min-height: 800px;
+}
+
+.explore-content-flex, .explore-content-flex-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 120px;
+}
+
+.kids-flex-img, .teachers-flex-img {
+    flex: 0 0 40%;
+}
+
+.kids-flex-img img, .teachers-flex-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.explore-content-flex-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 
 /* HIDDEN DR. EGGHEAD */
 
@@ -695,59 +742,12 @@ footer {
 
 /* FOR TEACHERS SECTION */
 
-.container {
-    width: 80%;
-    margin: auto;
-}
-
-.for-teachers {
-    background-color: whitesmoke;
-}
-
-.for-teachers-flex, .for-researchers-flex {
-    display: flex;
-    flex-direction: column;
-    margin: 240px auto;
-    gap: 40px;
-}
-
-.for-teachers-img, .for-researchers-img {
-    border-radius: 20px;
-    object-fit: cover;
-    flex: 0 0 50%;
-    height: 300px;
-}
-
-.for-teachers img, .for-researchers img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.text-container-for-teachers {
-    text-align: left;
-    max-width: 650px;
-    height: 300px;
-    margin: 0 auto;
-    flex: 0 0 50%;
+.teachers-and-researchers-section {
+    padding: 120px 0px;
 }
 
 
-.for-teachers p, .for-researchers p{
-    color: black;
-    font-size: 20px;
-    height: fit-content;
-    margin-top: 24px;
-}
-
-
-/* FOR RESEARCHERS SECTION */
-
-
-
-
-/* VISIT SECTION */
+/* -------------------------- VISIT SECTION ------------------------ */
 
 
 .visit-information h3, .visit-information a {
@@ -831,23 +831,10 @@ footer {
 
 /* COSMOLOGY SECTION */
 
-.cosmo-section {
-    background-image: url(/images/cosmo-bg.jpg);
-    background-size: 40% 100%;
-    background-repeat: repeat;
-    background-position-x: -200px;
-}
-
 .cosmo-section p, .evolution-section p, .bioligy-section p, .robotics-section p, .ecology-section p {
     margin: 1em 0px;
     font-size: 20px;
     color: black;
-}
-
-.cosmo-section h3 {
-    color: black;
-    text-transform: uppercase;
-    font-size: 32px;
 }
 
 .background {
@@ -857,18 +844,13 @@ footer {
     background-color: whitesmoke;
 }
 
-.cosmology-background {
-    background-color: whitesmoke;
-}
-
 .flex-container {
-    width: 80%;
     margin: 80px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 24px;
-    padding: 100px 0px 100px;
+    padding: 100px 5% 100px;
     background-color: white;
     border-radius: 50px;
     box-shadow: rgb(206, 206, 206) 0px 0px 20px;
@@ -910,46 +892,18 @@ footer {
 }
 
 
-/* EVOLUTION SECTION */ 
-
-.evolution-section {
-    background-image: url(/images/evolution-bg.jpg);
-    background-size: 40% 100%;
-    background-repeat: repeat;
-    background-position-x: -200px;
-}
-
-.evolution-section p, .bioligy-section p, .robotics-section p, .ecology-section p {
-    color: black;
-}
+/* SECTIONS HEADINGS AND IMG */ 
 
 .evolution-section .exhibit-icon img, .bioligy-section .exhibit-icon img, .robotics-section .exhibit-icon img, .ecology-section .exhibit-icon img {
     width: 50%;
 }
 
-.evolution-section h3, .bioligy-section h3, .robotics-section h3, .ecology-section h3 {
+.cosmo-section h3, .evolution-section h3, .bioligy-section h3, .robotics-section h3, .ecology-section h3 {
     text-transform: uppercase;
     font-size: 32px;
 }
 
-/* BIOLIGY SECTION */
-
-.bioligy-section {
-    background-image: url(/images/bioligy-bg.jpg);
-}
-
-/* ROBOTICS SECTION */
-
-.robotics-section {
-    background-image: url(/images/robotics-bg.jpg);
-}
-
-
 /* ECOLOGY SECTION */ 
-
-.ecology-section {
-    background-image: url(/images/turtle.jpg);
-}
 
 .ecology-background {
     height: fit-content;
@@ -1142,6 +1096,47 @@ footer {
         flex-direction: row-reverse;
     }
 
+    .explore-content-flex-1 {
+        flex-direction: row;
+    }
+
+    .explore-content-flex-2 {
+        flex-direction: row-reverse;
+    }
+
+    .cosmo-section {
+        background-image: url(/images/cosmo-bg.jpg);
+    }
+
+    .evolution-section {
+        background-image: url(/images/evolution-bg.jpg);
+    }
+    
+    .bioligy-section {
+        background-image: url(/images/bioligy-bg.jpg);
+    }
+
+    .robotics-section {
+        background-image: url(/images/robotics-bg.jpg);
+    }
+    
+    .ecology-section {
+        background-image: url(/images/turtle.jpg);
+    }
+
+    .flex-container {
+        width: 80%;
+    }
+    
+    .footer-wrap {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .footer-text-wrap p, .footer-links {
+        text-align: left;
+    }
+
  
 
   }
@@ -1182,6 +1177,10 @@ footer {
     }
     .visit-prof {
         flex-direction: column;
+    }
+
+    .footer-wrap {
+        justify-content: space-between;
     }
 }
 
