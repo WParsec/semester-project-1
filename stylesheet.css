@@ -45,8 +45,9 @@ a:hover {
 
 p {
     font-family: 'Montserrat';
-    color: white;
+    color: black;
     font-weight: normal;
+    font-size: 20px;
 }
 
 h1 {
@@ -156,6 +157,7 @@ footer {
 .footer-text-wrap p {
     padding-bottom: 1em;
     text-align: center;
+    color: white;
 }
 
 .social-media-flex {
@@ -223,6 +225,7 @@ footer {
 
 .speech-text p {
     padding: 12px 0px;
+    color: white;
 }
 
 .speech-text {
@@ -294,6 +297,7 @@ footer {
 
 .hero-below-text p {
     font-size: 20px;
+    color: white;
 }
 
 .orion {
@@ -333,6 +337,7 @@ footer {
 
 .speech-text-2 p {
     font-size: 18px;
+    color: white;
 }
 
 
@@ -386,7 +391,6 @@ footer {
 }
 
 .heading-exhibitions h2 {
-    color: black;
     text-align: center;
 }
 
@@ -409,8 +413,6 @@ footer {
 }
 
 .card p {
-    color: black;
-    font-family: 'Montserrat';
     font-weight: 500;
     padding: 16px 0;
     font-size: 24px;
@@ -495,7 +497,6 @@ footer {
 }
 
 .news-card p {
-    color: black;
     font-size: 16px;
     padding-bottom: 60px;
     
@@ -523,13 +524,11 @@ footer {
 }
 
 .get-involved p {
-    color: black;
     font-size: 20px;
     text-align: left;
 }
 
 .get-involved h2 {
-    color: black;
     padding: 120px 0px 120px;
 }
 
@@ -608,7 +607,6 @@ footer {
 }
 
 .dr-egghead-bottom p {
-    color: black;
     width: 100%;
     padding: 8px;
     z-index: 1000;
@@ -656,7 +654,6 @@ footer {
 }
 
 .for-kids p, .teachers-and-researchers-section p {
-    color: black;
     font-size: 20px;
     padding-bottom: 1em;
 }
@@ -762,7 +759,6 @@ footer {
 }
 
 .book-a-tour p {
-    color: black;
     font-size: 20px;
     margin-top: 1em;
 }
@@ -786,6 +782,7 @@ footer {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 
@@ -811,7 +808,6 @@ footer {
 }
 
 .visit-information p {
-    color: black;
     margin: 1em 0px;
     font-size: 20px;
 }
@@ -888,7 +884,6 @@ footer {
 .cosmo-section p, .evolution-section p, .bioligy-section p, .robotics-section p, .ecology-section p {
     margin: 1em 0px;
     font-size: 20px;
-    color: black;
 }
 
 .background {
@@ -973,70 +968,67 @@ footer {
 
 /* ------------------------ NEWS AND EVENTS PAGE ----------------------- */
 
-.events-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    max-height: 300px;
-}
-
-.events-page h3 {
-    margin: 0;
-    font-size: 32px;
-    font-weight: 500;
-}
-
-.events-container p {
-    color: black;
-    font-size: 1.2rem;
-    margin: 1em 0 0;
-}
 
 .events-page {
     background: whitesmoke;
-    padding: 120px 10% 0px;
 }
 
-.events-page h1 {
-    padding: 80px 0 80px;
-    text-align: center;
-    color: #091E2E;
-}
-
-.events-container {
-    width: 90%;
+.events-content-container {
+    width: 80%;
     margin: auto;
 }
 
-.event-card-wrapper {
+.events-flex {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    padding-top: 120px;
+    gap: 40px;
 }
 
-.events-card {
-    display: flex;
-    flex-direction: column;
+.events-flex-1-img {
+    flex: 0 0 40%;
+}
+
+.events-page img {
     border-radius: 20px;
-    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.event-card-img {
-    padding: 1rem;
-    flex: 1 1 50%;
+.events-flex p {
+    margin-top: 1em;
 }
 
-.visit-prof-img img {
+.book-a-tour-cta p {
+    margin-top: 0px;
+}
+
+.events-flex-2-img img {
     max-height: 300px;
 }
 
-.events-text-wrap {
-    padding: 1rem;
-    display: flex;
-    flex: 1 1 50%;
+.events-flex-3-img img {
+    border-radius: 50%;
+    object-fit: cover;
+    max-height: 300px;
+    max-width: 300px;
+    display: block;
+    margin: auto;
+    border: 4px solid black;
+    filter: drop-shadow( #414141 0px 0px 15px);
+}
+
+.events-flex-3 {
     flex-direction: column;
 }
+
+.events-flex-3-img {
+    flex: 0 0 30%;
+}
+
+
+
 
 .dr-egghead-events {
     display: flex;
@@ -1047,10 +1039,6 @@ footer {
 
 .dr-egghead-events img {
     max-width: 150px;
-}
-
-.dr-egghead-events p {
-    color: black;
 }
 
 
@@ -1195,6 +1183,12 @@ footer {
         flex-direction: row;
     }
 
+    .events-flex-1 {
+        flex-direction: row-reverse;
+    }
+
+    
+
  
 
   }
@@ -1239,6 +1233,10 @@ footer {
 
     .footer-wrap {
         justify-content: space-between;
+    }
+
+    .events-flex-3 {
+        flex-direction: row-reverse;
     }
 }
 
