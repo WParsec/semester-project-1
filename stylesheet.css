@@ -1,6 +1,11 @@
 @font-face {
-    font-family: 'nulshock', Verdana, Tahoma, sans-serif;
+    font-family: 'nulshock';
     src: url(/fonts/nulshock-bd.ttf);
+}
+
+@font-face {
+    font-family: 'nulshock';
+    src: url(/nulshock-bd.ttf);
 }
 
 @font-face {
@@ -60,7 +65,7 @@ p {
 
 h1 {
     font-family: 'nulshock';
-    color: white;
+    color: var(--background-1);
     font-size: 32px;
 }
 
