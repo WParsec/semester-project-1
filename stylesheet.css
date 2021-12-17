@@ -24,6 +24,14 @@
     font-style: normal;
 }
 
+:root {
+    --background-1: whitesmoke;
+    --background-2: #091E2E;
+    --copy-1: black;
+    --gradient: linear-gradient(0.75turn, #ed8e61, #c373ff, #33c6ff);
+    --orange: #FF931E;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -59,7 +67,7 @@ h1 {
 h2 {
     font-family: 'Montserrat';
     font-size: 32px;
-    color: black;
+    color: var(--copy-1);
     text-transform: uppercase;
 }
 
@@ -78,10 +86,44 @@ body {
     text-decoration: underline;
 }
 
+/* ------------------------ KEYFRAME ------------------------------ */
+
+@keyframes scalein {
+    0%   {transform: scale(0.5);}
+    0% {opacity: 0.2;}
+    100% {opacity: 1;}
+  }
+
+@keyframes slidein {
+    0%   {transform: translateX(-150%);}
+    100% {transform: translateX(0%);}
+  }
+
+@keyframes slideup {
+    0%   {transform: translateY(150%);}
+    100% {transform: translateY(0%);}
+    100% {transform: rotate(-90deg);}
+  }
+
+.hero-text h1 {
+    animation-name: scalein;
+    animation-duration: 1s;
+}
+
+.hero-text a {
+    animation-name: slidein;
+    animation-duration: 1s;
+}
+
+.dr-egghead-1 {
+    animation-name: slidein;
+    animation-duration: 1s;
+}
+
 /* ------------------------ HEADER NAV ---------------------------- */
 
 header {
-    background-color: #091E2E;
+    background-color: var(--background-2);
     background-image: url(/images/nav-space.jpg);
     height: 70px;
     display: flex;
@@ -142,7 +184,7 @@ header {
 /* ------------------------- FOOTER ------------------------- */
 
 footer {
-    background-color: #091E2E;
+    background-color: var(--background-2);
 }
 
 .footer-wrap {
@@ -157,7 +199,7 @@ footer {
 .footer-text-wrap p {
     padding-bottom: 1em;
     text-align: center;
-    color: white;
+    color: var(--background-1);
 }
 
 .social-media-flex {
@@ -170,7 +212,7 @@ footer {
     font-size: 0.8em;
     padding-left: 10%;
     padding-bottom: 2em;
-    color: white;
+    color: var(--background-1);
 }
 
 .footer-links {
@@ -189,7 +231,7 @@ footer {
 /* HOMEPAGE HERO */
 
 .hero-home {
-    background-color: #091E2E;
+    background-color: var(--background-2);
     background-image: url(/images/hero-home-space.jpg);
     background-size: cover;
     height: 715px;
@@ -198,7 +240,7 @@ footer {
 }
 
 .header-text {
-    color: white;
+    color: var(--background-1);
     margin-left: 10%;
     padding: 60px 10px 0px 0px;
 }
@@ -226,7 +268,8 @@ footer {
 
 .speech-text p {
     padding: 12px 0px;
-    color: white;
+    color: var(--background-1);
+    font-size: 1em;
 }
 
 .speech-text {
@@ -237,7 +280,7 @@ footer {
 
 .speech-text span {
     font-family: 'nulshock';
-    color: #FF931E;
+    color: var(--orange);
 }
 
 .dr-egghead-1 {
@@ -279,7 +322,7 @@ footer {
 /* HERO HOMEPAGE PART 2 */
 
 .hero-below {
-    background-color: #091E2E;
+    background-color: var(--background-2);
     height: 1000px;
     position: relative;
     width: 100%;
@@ -298,7 +341,7 @@ footer {
 
 .hero-below-text p {
     font-size: 20px;
-    color: white;
+    color: var(--background-1);
 }
 
 .orion {
@@ -338,7 +381,7 @@ footer {
 
 .speech-text-2 p {
     font-size: 18px;
-    color: white;
+    color: var(--background-1);
 }
 
 
@@ -403,7 +446,7 @@ footer {
     flex-wrap: wrap-reverse;
     padding: 120px 0 120px 0;
     height: fit-content;
-    background-color: whitesmoke;
+    background-color: var(--background-1);
 }
 
 .card {
@@ -458,7 +501,7 @@ footer {
 /* NEWS AND EVENTS SECTION */
 
 .news-and-events-section {
-    background-color: #091E2E;
+    background-color: var(--background-2);
     background-image: radial-gradient( #1a4464, #091E2E);
     text-align: center;
     padding-bottom: 250px;
@@ -466,7 +509,7 @@ footer {
 
 .news-and-events-section h2 {
     padding: 120px 0px 120px 0px;
-    color: white;
+    color: var(--background-1);
 }
 
 .card-container {
@@ -478,7 +521,7 @@ footer {
 }
 
 .news-card {
-    background-color: whitesmoke;
+    background-color: var(--background-1);
     flex: 1 1 calc(33.3% - 2em);
     width: 100%;
     text-align: left;
@@ -519,7 +562,7 @@ footer {
 /* GET INVOLVED */
 
 .get-involved {
-    background-color: whitesmoke;
+    background-color: var(--background-1);
     text-align: center;
     padding: 0px 10%;
 }
@@ -589,7 +632,7 @@ footer {
 /* DR EGGHEAD AT BOTTOM OF HOME PAGE */
 
 .dr-egghead-bottom {
-    background-color: whitesmoke;
+    background-color: var(--background-1);
     padding-left: 10%;
 }
 
@@ -626,7 +669,7 @@ footer {
 /* ----------------------------- EXPLORE PAGE ------------------------- */
 
 .hero {
-    background-color: #091E2E;
+    background-color: var(--background-2);
     background-image:url(/images/space-hero.jpg);
     background-size: cover;
 }
@@ -698,7 +741,7 @@ footer {
 /* HIDDEN DR. EGGHEAD */
 
 .egghead-wrap-bg {
-    background-color: #091E2E;
+    background-color: var(--background-2);
 }
 
 .hidden-egghead-wrap {
@@ -815,7 +858,7 @@ footer {
 }
 
 .visit-information {
-    background-color: whitesmoke;
+    background-color: var(--background-1);
     padding: 120px 10% 160px;
 }
 
@@ -834,7 +877,7 @@ footer {
     padding: 0 3em 3em;
     min-width: 310px;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: var(--background-1);
     box-shadow: rgb(199, 199, 199) 0 0 15px;
 }
 
@@ -892,7 +935,7 @@ footer {
     width: 90%;
     height: fit-content;
     margin: 0 auto;
-    background-color: whitesmoke;
+    background-color: var(--background-1);
 }
 
 .flex-container {
@@ -902,7 +945,7 @@ footer {
     justify-content: space-evenly;
     gap: 24px;
     padding: 100px 5% 100px;
-    background-color: white;
+    background-color: var(--background-1);
     border-radius: 50px;
     box-shadow: rgb(206, 206, 206) 0px 0px 20px;
 }
@@ -972,7 +1015,7 @@ footer {
 
 
 .events-page {
-    background: whitesmoke;
+    background: var(--background-1);
 }
 
 .events-content-container {
@@ -1078,6 +1121,7 @@ footer {
     .speech-text p {
         font-size: 20px;
         padding-top: 18px;
+        font-size: 20px;
     }
 
     .moon {
@@ -1189,7 +1233,10 @@ footer {
         flex-direction: row-reverse;
     }
 
-    
+    .dr-egghead-1 {
+        animation-name: slideup;
+        animation-duration: 1s;
+    }
 
  
 
