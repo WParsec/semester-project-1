@@ -170,6 +170,7 @@ footer {
     font-size: 0.8em;
     padding-left: 10%;
     padding-bottom: 2em;
+    color: white;
 }
 
 .footer-links {
@@ -627,6 +628,7 @@ footer {
 .hero {
     background-color: #091E2E;
     background-image:url(/images/space-hero.jpg);
+    background-size: cover;
 }
 
 .hero-text {
