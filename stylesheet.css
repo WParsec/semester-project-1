@@ -579,6 +579,7 @@ footer {
     padding: 2em;
     border-radius: 20px;
     margin: 80px auto 120px;
+    width: fit-content;
 }
 
 .contact-mail p {
@@ -641,7 +642,11 @@ footer {
     display: block;
     margin-top: 1em;
     text-align: left;
-    
+    opacity: 0.5;
+}
+
+.hero-text a:hover {
+    opacity: 1;
 }
 
 /* --------------------------- FOR KIDS ----------------------------- */ 
@@ -750,9 +755,55 @@ footer {
 /* -------------------------- VISIT SECTION ------------------------ */
 
 
-.visit-information h3, .visit-information a {
-    color: black;
+/* BOOK A TOUR */
+
+.book-a-tour {
+    padding-top: 120px;
 }
+
+.book-a-tour p {
+    color: black;
+    font-size: 20px;
+    margin-top: 1em;
+}
+
+.book-a-tour-container {
+    width: 80%;
+    margin: auto;
+}
+
+.book-a-tour-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.book-a-tour-img {
+    flex: 0 0 40%;
+}
+
+.book-a-tour-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+.book-a-tour-cta {
+    background: linear-gradient(0.75turn, #ed8e61, #c373ff, #33c6ff);
+    display: flex;
+    width: fit-content;
+    border-radius: 20px;
+    margin-top: 1em;
+}
+
+.book-a-tour-cta p {
+    margin-top: 0px;
+    padding: 1em;
+}
+
+/* VISIT INFO CARDS */
+
 
 .visit-card h3 {
     padding: 80px 0px 40px;
@@ -766,7 +817,7 @@ footer {
 }
 
 .visit-information {
-    background-color: #FAF9F5;
+    background-color: whitesmoke;
     padding: 120px 10% 160px;
 }
 
@@ -785,6 +836,8 @@ footer {
     padding: 0 3em 3em;
     min-width: 310px;
     width: 100%;
+    background-color: whitesmoke;
+    box-shadow: rgb(199, 199, 199) 0 0 15px;
 }
 
 .visit-card:hover {
@@ -794,18 +847,19 @@ footer {
 .visit-card a {
     text-decoration: underline;
     text-transform: none;
+    color: black;
 }
 
 .visit-card-1 {
-    background-color: #DFF0FD;
+    background-color: #c2e9ff6c;
 }
 
 .visit-card-2 {
-    background-color: #FFF4E8;
+    background-color: #d9d7ff6e;
 }
 
 .visit-card-3 {
-    background-color: #E9F4EC;
+    background-color: #ebc3dd65;
 }
 
 .visit-card-3 p, .visit-card-4 p, .visit-card-5 p, .visit-card-6 p {
@@ -813,15 +867,15 @@ footer {
 }
 
 .visit-card-4 {
-    background-color: #F2F2F2;
+    background-color: #ebc3dd6c;
 }
 
 .visit-card-5 {
-    background-color: #FBFDE5;
+    background-color: #fbfde594;
 }
 
 .visit-card-6 {
-    background-color: #DFF0FD;
+    background-color: #dff0fd81;
 }
 
 
@@ -1135,6 +1189,10 @@ footer {
 
     .footer-text-wrap p, .footer-links {
         text-align: left;
+    }
+
+    .book-a-tour-flex {
+        flex-direction: row;
     }
 
  
