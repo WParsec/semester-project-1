@@ -659,6 +659,7 @@ footer {
     width: 100%;
     padding: 8px;
     z-index: 1000;
+    font-size: 16px;
 }
 
 .dr-egghead-bottom a {
