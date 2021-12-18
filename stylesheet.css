@@ -414,6 +414,7 @@ footer {
 .easter-egg p {
     display: none;
     width: 100px;
+    color: var(--background-1);
 }
 
 #easter-egg:checked + p {
